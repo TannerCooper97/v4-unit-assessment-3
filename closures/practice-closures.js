@@ -10,9 +10,18 @@
   
   //CODE HERE
 
-  
-  //Now create a variable called secretString. Its value should be the invocation of myFunc.
+  function myFunc(){
+    let myStr = 'super secret string';
 
+    function getSecretString(){
+      return myStr;
+    }
+
+    return getSecretString();
+  }
+
+  //Now create a variable called secretString. Its value should be the invocation of myFunc.
+  let secretString = myFunc();
   //CODE HERE
   
   
@@ -29,6 +38,7 @@
   */
   
   //CODE HERE
+
 
   
   //Create a variable called kitchenSwitch whose value is the invocation of lightSwitch.

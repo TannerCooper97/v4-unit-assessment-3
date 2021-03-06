@@ -15,6 +15,19 @@
 */
 
 //CODE HERE
+class Character{
+    constructor(name, type){
+      this.name = name;
+      this.type = type;
+
+      }
+
+      getInfo(){
+        let saying = `This is a ${this.type} character named ${this.name}.`
+        return saying;
+      }
+}
+
 
 //////////////////PROBLEM 2////////////////////
 
@@ -34,10 +47,31 @@
 
 //CODE HERE
 
+class NPC extends Character{
+  
+  constructor(name, type, location, phrase){
+    super(name, type);
+    this.location = location;
+    this.phrase = phrase;
+  }
+
+  dialogue(){
+    let phraseTwo = `${this.name}: ${this.phrase}`
+    return phraseTwo;
+  }
+
+}
+
+
+
+
 /*
     Create an NPC named Ralph who is a human located in Niceland. His phrase should be `I'm gonna wreck it!`. 
     Store your new NPC in a variable called 'ralph'.
 */
+
+const ralph = new NPC('Ralph', 'human', 'Niceland', `I'm gonna wreck it!`);
+
 
 //CODE HERE
 
@@ -49,6 +83,8 @@
 */
 
 //CODE HERE
+
+//Sorry Ralph, peace out. 
 
 //////////////////PROBLEM 3////////////////////
 
@@ -74,7 +110,9 @@
 */
 
 //CODE HERE
-
+class Player {
+  
+}
 /*
     Next, we'll create two Players.
     Store the first in a variable called aang, his name should be 'Aang' 
@@ -84,6 +122,7 @@
 */
 
 //CODE HERE
+
 
 /*
     Let's see how a fight between these two would go. 
