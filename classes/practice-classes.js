@@ -84,6 +84,7 @@ const ralph = new NPC('Ralph', 'human', 'Niceland', `I'm gonna wreck it!`);
 
 //CODE HERE
 
+
 //Sorry Ralph, peace out. 
 
 //////////////////PROBLEM 3////////////////////

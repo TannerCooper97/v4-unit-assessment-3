@@ -21,9 +21,9 @@
   }
 
   //Now create a variable called secretString. Its value should be the invocation of myFunc.
-  let secretString = myFunc();
+ 
   //CODE HERE
-  
+  let secretString = myFunc();
   
   ////////////PROBLEM 2////////////
 
@@ -38,28 +38,41 @@
   */
   
   //CODE HERE
+ function lightSwitch(){
+  let isTheLightOn = false;
+    function flipTheSwitch(){
+      if(isTheLightOn === true){
+        return "The light is on";
+      } else if (isTheLightOn === false){
+        return "The light is off";
+      }
 
+    } return flipTheSwitch;
+
+ }
 
   
   //Create a variable called kitchenSwitch whose value is the invocation of lightSwitch.
   
   //CODE HERE
-
+    let kitchenSwitch = lightSwitch();
   
   //Invoke kitchenSwitch.
+  kitchenSwitch();
 
   //CODE HERE
   
   
   //Create a variable called bathroomSwitch whose value is the invocation of lightSwitch. 
+  
 
   //CODE HERE
-  
+  let bathroomSwitch = lightSwitch();
   
   //Invoke bathroomSwitch twice.
   
   //CODE HERE
-
+  bathroomSwitch();
   
   
   ////////////PROBLEM 3////////////
@@ -74,6 +87,10 @@
   */
 
   //CODE HERE
+
+  function plantTracker(){
+    plant
+  }
 
 
   ////////////PROBLEM 4////////////
